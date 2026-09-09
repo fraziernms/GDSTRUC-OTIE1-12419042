@@ -2,11 +2,21 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.print("Enter Name: ");
+        int[] nums = new int[5];
+        nums[0] = 100;
+        nums[1] = -1;
+        nums[2] = 50;
+        nums[3] = 45;
+        nums[4] = -48;
 
-        Scanner scanner = new Scanner(System.in);
-        String name = scanner.nextLine();
+        int searchNum = 50;
+        int index = -1;
 
-        System.out.println("Hello " + name + "!");
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == searchNum) {
+                index = i;
+
+            }
+        }
     }
 }
